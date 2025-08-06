@@ -19,8 +19,13 @@ import com.example.Emplyee_demo.service.EmployeeService;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
-	@Autowired
 	private EmployeeService service;
+
+	public EmployeeController(EmployeeService service) {
+		
+		this.service=service;
+	}
+	
 	
 	  @GetMapping
 	    public List<Employee> getAll() {
