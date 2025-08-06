@@ -18,7 +18,7 @@ import com.example.Emplyee_demo.service.EmployeeService;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
-	private EmployeeService service;
+	private final EmployeeService service;
 
 	public EmployeeController(EmployeeService service) {
 		

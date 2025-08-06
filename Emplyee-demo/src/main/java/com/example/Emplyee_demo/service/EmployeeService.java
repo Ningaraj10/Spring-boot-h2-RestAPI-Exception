@@ -10,7 +10,7 @@ import com.example.Emplyee_demo.repository.EmployeeRepository;
 public class EmployeeService {
 
 	 
-	    private EmployeeRepository repository;
+	    private  final EmployeeRepository repository;
 	    
 	    public EmployeeService(EmployeeRepository repository) {
 	    	this.repository=repository;
