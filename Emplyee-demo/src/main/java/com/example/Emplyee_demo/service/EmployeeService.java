@@ -2,7 +2,6 @@ package com.example.Emplyee_demo.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.Emplyee_demo.exception.ResourceNotFoundException;
 import com.example.Emplyee_demo.model.Employee;
@@ -10,8 +9,12 @@ import com.example.Emplyee_demo.repository.EmployeeRepository;
 
 public class EmployeeService {
 
-	 @Autowired
+	 
 	    private EmployeeRepository repository;
+	    
+	    public EmployeeService(EmployeeRepository repository) {
+	    	this.repository=repository;
+	    }
 
 	    public List<Employee> getAll() {
 	        return repository.findAll();

@@ -13,6 +13,12 @@ public class Employee {
 	
 	private long id;
 	
+	private String name;
+	
+	private String email;
+	
+	private String department;
+	
 	public long getId() {
 		return id;
 	}
@@ -20,12 +26,6 @@ public class Employee {
 	public void setId(long id) {
 		this.id = id;
 	}
-
-	private String name;
-	
-	private String email;
-	
-	private String department;
 
 	
 
